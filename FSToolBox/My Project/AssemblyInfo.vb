@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("")>
-<Assembly: AssemblyCopyright("Copyright © 2011-2019 Felix Simmet")>
+<Assembly: AssemblyCopyright("Copyright © 2007-2022 Felix Simmet")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
