@@ -19,7 +19,8 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>FSToolBox.xml</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
     <NoWarn>
     </NoWarn>
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
@@ -31,7 +32,8 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>FSToolBox.xml</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
     <NoWarn>
     </NoWarn>
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
@@ -73,22 +75,28 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Encryption\FileHash.vb" />
-    <Compile Include="Math\BitsAndBytes.vb" />
-    <Compile Include="Math\Bytes.vb" />
-    <Compile Include="Math\Mathematics.vb" />
-    <Compile Include="Simple\StringHex.vb" />
-    <Compile Include="Strings\ByteArray.vb" />
-    <Compile Include="Strings\Hexadecimal.vb" />
-    <Compile Include="UserManager\User.vb" />
-    <Compile Include="UserManager\Role.vb" />
-    <Compile Include="Windows\Registry\AutoStart.vb" />
-    <Compile Include="Encryption\Hash.vb" />
+    <Compile Include="Encryption\EncryptionFileHash.vb" />
+    <Compile Include="Math\MathBitsAndBytes.vb" />
+    <Compile Include="Math\MathBytes.vb" />
+    <Compile Include="Math\MathMathematics.vb" />
+    <Compile Include="RingBuffer\RingBufferDouble.vb" />
+    <Compile Include="RingBuffer\RingBufferInteger.vb" />
+    <Compile Include="RingBuffer\RingBufferLong.vb" />
+    <Compile Include="RingBuffer\RingBufferSingle.vb" />
+    <Compile Include="Simple\SimpleStringHex.vb" />
+    <Compile Include="Strings\StringsByteArray.vb" />
+    <Compile Include="Strings\StringsHexadecimal.vb" />
+    <Compile Include="UserManager\UserManagerUserUser.vb" />
+    <Compile Include="UserManager\UserManagerRole.vb" />
+    <Compile Include="Windows\Energy\EnergyMonitor.vb" />
+    <Compile Include="Windows\Registry\RegistryAutoLogonSwitcher.vb" />
+    <Compile Include="Windows\Registry\RegistryAutoStart.vb" />
+    <Compile Include="Encryption\EncryptionHash.vb" />
     <Compile Include="Windows\Screen\ScreenCapture.vb" />
     <Compile Include="Windows\Cursor\CursorPosition.vb" />
-    <Compile Include="Simple\Settings.vb" />
-    <Compile Include="Encryption\TripleDES.vb" />
-    <Compile Include="Simple\Template.vb" />
+    <Compile Include="Simple\SimpleSettings.vb" />
+    <Compile Include="Encryption\EncryptionTripleDES.vb" />
+    <Compile Include="Simple\SimpleTemplate.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -104,7 +112,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Windows\Common\Windows.vb" />
+    <Compile Include="Windows\Common\CommonWindows.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -125,6 +133,5 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
